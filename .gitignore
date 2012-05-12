@@ -1,0 +1,11 @@
+build
+dist
+.ropeproject
+*.sublime-workspace
+*.sublime-project
+*.pyc
+bugs
+help
+release
+Output
+build

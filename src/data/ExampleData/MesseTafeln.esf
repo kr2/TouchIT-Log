@@ -1,0 +1,171 @@
+MesseTafeln
+Tafel1_TFK.Visu.1/1/0	Auswahl	Uncertain (1 Byte)	Low	
+Tafel1_TFK.Visu.1/1/1	Temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Visu.1/1/2	Feuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Visu.1/1/3	Profile HVAC	EIS 1 'Switching' (1 Bit)	Low	
+Tafel1_TFK.Visu.1/1/4	Profile 2Byte	EIS 1 'Switching' (1 Bit)	Low	
+Tafel1_TFK.Visu.1/1/5	Profile 100%	EIS 1 'Switching' (1 Bit)	Low	
+Tafel1_TFK.Visu.1/1/6	Uhrzeit	Uncertain (3 Byte)	Low	
+Tafel1_TFK.Visu.1/1/7	Datum	Uncertain (3 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/0	Nachtabsenkung	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/1	1 KFF Temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/2	1 KFF relFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/3	1 KFF absFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/4	1 HTF100 temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/5	2 RPFF temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/6	2 RPFF relFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/7	2 RPFF absFeucht	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/8	2 DTF temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/9	3 AFF temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/10	3 AFF relFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/11	3 AFF absFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/12	3 ESTF temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/13	4 RPFF_MMF temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/14	4 RPFF_MMF relFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/15	4 RPFF_MMF absFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/16	4 RPTF2 temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/17	5 int temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/18	5 int relFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/19	5 int absFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/20	5 RPTF1 temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/21	6 int temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/22	7 int temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/23	7 int relFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/24	7 int absFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/25	8 int temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/26	8 int relFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/27	8 int absFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/28	9 ATF2 temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/29	10 int temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/30	10 int relFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/31	10 int absFeuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/32	11 int temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/33	12 int temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/34	13 ALTF2 temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/35	14 KTF1 temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/36	15 OFTF temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/37	16 ALTF1 temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/38	Standby	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/39	Komfort	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/40	Sollwertausgabe	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/41	HVAC	Uncertain (1 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/42	17 int Temp	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/43	17 rel. Feuchte	Uncertain (2 Byte)	Low	
+Tafel1_TFK.Messwerte.1/2/44	17 abs. Feuchte	Uncertain (2 Byte)	Low	
+Tafel2_S8.Visu.2/1/0	Select	Uncertain (1 Byte)	Low	
+Tafel2_S8.Visu.2/1/1	XXX CO2	Uncertain (4 Byte)	Low	
+Tafel2_S8.Visu.2/1/2	XXX r.H	Uncertain (2 Byte)	Low	
+Tafel2_S8.Visu.2/1/3	XXX T	Uncertain (2 Byte)	Low	
+Tafel2_S8.Visu.2/1/5	Leistung	Uncertain (4 Byte)	Low	
+Tafel2_S8.Messwert.2/2/1	AM1 CO2	Uncertain (4 Byte)	Low	
+Tafel2_S8.Messwert.2/2/2	AM1 r.H	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/3	AM1T	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/4	AM2 CO2	Uncertain (4 Byte)	Low	
+Tafel2_S8.Messwert.2/2/5	AM2 r.H	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/6	AM2 T	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/7	TL2 CO2	Uncertain (4 Byte)	Low	
+Tafel2_S8.Messwert.2/2/8	TL2 r.H	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/9	TL2 T	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/10	BFTLFT S.H.	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/11	BFTLFT BT	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/12	BFTLFT TP	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/13	BFTLFT abs.H	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/14	BFTLFT rel.H	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/15	BFTLFT LT	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/16	WAQ pH	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/17	WAQ ORP	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/18	WAQ WT	Uncertain (2 Byte)	Low	
+Tafel2_S8.Messwert.2/2/19	F Füllstand	Uncertain (4 Byte)	Low	
+Tafel2_S8.Messwert.2/2/20	F Pegel	Uncertain (4 Byte)	Low	
+Tafel2_S8.Messwert.2/2/21	F Distanz	Uncertain (4 Byte)	Low	
+Tafel2_S8.Messwert.2/2/22	F %	Uncertain (1 Byte)	Low	
+Tafel2_S8.Messwert.2/2/23	F Ausgang1	EIS 1 'Switching' (1 Bit)	Low	
+Tafel2_S8.Messwert.2/2/24	F Ausgang2	EIS 1 'Switching' (1 Bit)	Low	
+Tafel2_S8.Messwert.2/2/25	GLBS W/m2	Uncertain (2 Byte)	Low	
+Tafel3_Smart.VISU.3/1/0	TIME	Uncertain (3 Byte)	Low	
+Tafel3_Smart.VISU.3/1/1	DATE	Uncertain (3 Byte)	Low	
+Tafel3_Smart.WMZ.3/2/0	Mom. Leistung	Uncertain (4 Byte)	Low	
+Tafel3_Smart.WMZ.3/2/1	Ak. Volumen	Uncertain (4 Byte)	Low	
+Tafel3_Smart.WMZ.3/2/2	Vorlauftemperatur	Uncertain (2 Byte)	Low	
+Tafel3_Smart.WMZ.3/2/3	Rücklauftemperatur	Uncertain (2 Byte)	Low	
+Tafel3_Smart.WMZ.3/2/4	Durchfluss	Uncertain (4 Byte)	Low	
+Tafel3_Smart.WMZ.3/2/5	Verbrauchswert	Uncertain (4 Byte)	Low	
+Tafel3_Smart.WMZ.3/2/6	Speicherwert	Uncertain (4 Byte)	Low	
+Tafel3_Smart.WMZ.3/2/7	Seriennummer	EIS 15 'Character String' (14 Byte)	Low	
+Tafel3_Smart.WMZ.3/2/8	Fehler	Uncertain (2 Byte)	Low	
+Tafel3_Smart.IMPZ.3/3/0	Zählerstand	Uncertain (4 Byte)	Low	
+Tafel3_Smart.IMPZ.3/3/1	Leistung/Volumenstrom	Uncertain (4 Byte)	Low	
+Tafel3_Smart.IMPZ.3/3/4	Stichdatum	Uncertain (3 Byte)	Low	
+Tafel3_Smart.IMPZ.3/3/5	Stichwert	Uncertain (4 Byte)	Low	
+Tafel3_Smart.IMPZ.3/3/6	nächstes Stichdatum	Uncertain (3 Byte)	Low	
+Tafel3_Smart.IMPZ.3/3/7	Verbrauchswert	Uncertain (4 Byte)	Low	
+Tafel3_Smart.IMPZ.3/3/8	Verbrauch Reset	Uncertain (2 Byte)	Low	
+Tafel3_Smart.IMPZ.3/3/9	Verbrauch Datum	Uncertain (3 Byte)	Low	
+Tafel3_Smart.IMPZ.3/3/10	Verbrauch Uhrzeit	Uncertain (3 Byte)	Low	
+Tafel3_Smart.IMPZ.3/3/11	Seriennummer	EIS 15 'Character String' (14 Byte)	Low	
+Tafel3_Smart.IMPZ-DUO.3/4/0	Tageswert	Uncertain (4 Byte)	Low	
+Tafel3_Smart.IMPZ-DUO.3/4/1	Nachtwert	Uncertain (4 Byte)	Low	
+Tafel3_Smart.IMPZ-DUO.3/4/2	Duo_Leistung	Uncertain (4 Byte)	Low	
+Tafel3_Smart.IMPZ-DUO.3/4/3	Select	EIS 1 'Switching' (1 Bit)	Low	
+Tafel3_Smart.DMX.3/5/0	Abs. Rot	Uncertain (1 Byte)	Low	
+Tafel3_Smart.DMX.3/5/1	Abs. Grün	Uncertain (1 Byte)	Low	
+Tafel3_Smart.DMX.3/5/2	Abs. Blau	Uncertain (1 Byte)	Low	
+Tafel3_Smart.DMX.3/5/3	Abs. Helligkeit	Uncertain (1 Byte)	Low	
+Tafel3_Smart.DMX.3/5/224	Zentral AUS	Uncertain (1 Byte)	Low	
+Tafel3_Smart.DMX.3/5/225	Szenenabruf	Uncertain (1 Byte)	Low	
+Tafel3_Smart.DMX.3/5/227	Sequenzabruf	Uncertain (1 Byte)	Low	
+Tafel3_Smart.MBUS.3/6/2	Vorlauftemperatur	Uncertain (4 Byte)	Low	
+Tafel3_Smart.MBUS.3/6/3	Rücklauftemperatur	Uncertain (4 Byte)	Low	
+Tafel3_Smart.MBUS.3/6/4	Durchfluss	Uncertain (4 Byte)	Low	
+Tafel3_Smart.MBUS.3/6/5	Verbrauchswert	Uncertain (4 Byte)	Low	
+Tafel4_Visu.Visu.4/1/0	Select	Uncertain (1 Byte)	Low	
+Tafel4_Visu.Visu.4/1/1	XXX CO2	Uncertain (4 Byte)	Low	
+Tafel4_Visu.Visu.4/1/2	XXX r.H	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Visu.4/1/3	XXX T	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Visu.4/1/4	Time	Uncertain (3 Byte)	Low	
+Tafel4_Visu.Visu.4/1/5	Date	Uncertain (3 Byte)	Low	
+Tafel4_Visu.Visu.4/1/6	Rot	Uncertain (1 Byte)	Low	
+Tafel4_Visu.Visu.4/1/7	Grün	Uncertain (1 Byte)	Low	
+Tafel4_Visu.Visu.4/1/8	Blau	Uncertain (1 Byte)	Low	
+Tafel4_Visu.Visu.4/1/9	Astro	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Visu.4/1/10	FR	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Visu.4/1/11	S	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Visu.4/1/12	PP	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Visu.4/1/13	FF	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Visu.4/1/14	Text	EIS 15 'Character String' (14 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/1	AE CO2	Uncertain (4 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/2	AE r.H	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/3	AE T	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/4	AW CO2	Uncertain (4 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/5	AW r.H	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/6	AW T	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/22	AE int temp	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/23	AE int relFeuchte	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/24	AE int absFeuchte	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/42	AW int Temp	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/43	AW rel. Feuchte	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/44	AW abs. Feuchte	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/45	ALTF2 Temp	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Messwert.4/2/46	EnOcean	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Regelung.4/3/0	AW Nachtabsenkung	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Regelung.4/3/38	AW Standby	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Regelung.4/3/39	AW Komfort	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Regelung.4/3/40	AW Sollwertausgabe	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Regelung.4/3/41	AW HVAC	Uncertain (1 Byte)	Low	
+Tafel4_Visu.EnOcean.4/4/0	Schalter	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.EnOcean.4/4/1	Fenster	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Divers.4/5/0	Neue Gruppenadresse	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Divers.4/5/1	Neue Gruppenadresse	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Divers.4/5/2	Neue Gruppenadresse	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Divers.4/5/3	Neue Gruppenadresse	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Divers.4/5/4	Neue Gruppenadresse	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Divers.4/5/5	Neue Gruppenadresse	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Divers.4/5/6	Neue Gruppenadresse	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Divers.4/5/7	Neue Gruppenadresse	Uncertain (1 Byte)	Low	
+Tafel4_Visu.Divers.4/5/8	Neue Gruppenadresse	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Divers.4/5/9	Neue Gruppenadresse	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Divers.4/5/10	Neue Gruppenadresse	Uncertain (1 Byte)	Low	
+Tafel4_Visu.Divers.4/5/11	Neue Gruppenadresse	EIS 1 'Switching' (1 Bit)	Low	
+Tafel4_Visu.Divers.4/5/12	Neue Gruppenadresse	Uncertain (2 Byte)	Low	
+Tafel4_Visu.Divers.4/5/13	Neue Gruppenadresse	Uncertain (1 Byte)	Low	
+Tafel4_Visu.Divers.4/5/14	Neue Gruppenadresse	EIS 1 'Switching' (1 Bit)	Low	

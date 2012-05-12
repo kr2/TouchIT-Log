@@ -1,0 +1,14 @@
+CO2 und TEMPERATUR
+Mess.ARCS8.0/0/1	M.Temperatur	Uncertain (2 Byte)	Low	
+Mess.ARCS8.0/0/2	M.CO2	Uncertain (2 Byte)	Low	
+Mess.ARCS8.0/0/3	M.Feuchte	Uncertain (2 Byte)	Low	
+Mess.TFK.0/1/1	M.Temperatur	Uncertain (2 Byte)	Low	
+Mess.TFK.0/1/2	M.Feuchte	Uncertain (2 Byte)	Low	
+datetime.date.1/0/0	Date test	Uncertain (3 Byte)	Low	
+datetime.time.1/1/0	timeTest	Uncertain (3 Byte)	Low	
+float test.test.2/2/2	4 byte float test	Uncertain (4 Byte)	Low	
+byte test.test.3/3/3	byte unsignend test	Uncertain (1 Byte)	Low	
+byte test.test.3/3/4	byte sigend test	Uncertain (1 Byte)	Low	
+4 bit dimer test.test.4/4/4	4 bit dimmer test	EIS 2 'Dimming - control' (4 Bit)	Low	
+bit Test.test.5/5/5	bin test	EIS 1 'Switching' (1 Bit)	Low	
+StringTest.test.6/6/6	TextTest	EIS 15 'Character String' (14 Byte)	Low	
