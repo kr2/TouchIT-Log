@@ -11,16 +11,14 @@ ETS4:
 ...->...->export opc
 
 File Select:
-1. Start the tool
-2. click Add esf Files and select one or more esf files (the lower ones overwrite redundant information)
-3. Click Add log Files and add the log files
+- Start the tool
+- click Add esf Files and select one or more esf files (the lower ones overwrite redundant information)
+- Click Add log Files and add the log files
+- click OK
 
 Tips:
 - you can delete added files via select and delete button
 - you can move files via drag and drop
-
-5. click OK
-
 
 Groupadresstree:
 ================
