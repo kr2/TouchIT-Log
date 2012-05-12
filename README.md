@@ -11,15 +11,15 @@ ETS4:
 ...->...->export opc
 
 File Select:
-- Start the tool
-- click Add esf Files and select one or more esf files (the lower ones overwrite redundant information)
-- Click Add log Files and add the log files
+1. Start the tool
+2. click Add esf Files and select one or more esf files (the lower ones overwrite redundant information)
+3. Click Add log Files and add the log files
 
-|Tips:
-|- you can delete added files via select and delete button
-|- you can move files via drag and drop
+Tips:
+- you can delete added files via select and delete button
+- you can move files via drag and drop
 
-- click OK
+5. click OK
 
 
 Groupadresstree:
@@ -37,10 +37,8 @@ Mouse wheel to zoom
 Z key (on the keybord) to get zoom tool  (! mouse over plot necessary)
 
 Picture Export:
-Set the wanted resolution and click on the button corresponding to the wanted file format.
+Set the wanted resolution and click on the button.
 
-|Note
-|dpi is only used for png export
 
 
 
