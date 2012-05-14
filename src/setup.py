@@ -102,13 +102,13 @@ data_files = []
 #import matplotlib as mpl
 #data_files = mpl.get_py2exe_datafiles()
 
-# Parsing folders and building the data_files table
-# for folder, relative_path in data_folders:
-#     for file in os.listdir(folder):
-#         f1 = os.path.join(folder, file)
-#         if os.path.isfile(f1):  # skip directories
-#             f2 = relative_path, [f1]
-#             data_files.append(f2)
+#Parsing folders and building the data_files table
+for folder, relative_path in data_folders:
+    for file in os.listdir(folder):
+        f1 = os.path.join(folder, file)
+        if os.path.isfile(f1):  # skip directories
+            f2 = relative_path, [f1]
+            data_files.append(f2)
 
 data_files.append((r'enable', [os.path.join(ETS_folder, r'enable\images.zip')]))
 
