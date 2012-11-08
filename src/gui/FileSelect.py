@@ -6,7 +6,7 @@ __version__ = '1.0'
 _debug = 0
 
 from traits.api import HasTraits, List, Button
-from traitsui.api import View, Item, VGroup, ListStrEditor
+from traitsui.api import View, Item, VGroup,HGroup, ListStrEditor
 
 from pyface.file_dialog import FileDialog
 from pyface.constant import OK
@@ -19,6 +19,7 @@ class FileOpener(HasTraits):
 
   log_files = List
   open_logfiles = Button("Add log Files")
+  load_ftp_logfiles = Button("Load Files from FTP")
 
   def __init__(self):
     if _debug == 1:
@@ -59,7 +60,14 @@ class FileOpener(HasTraits):
       ),
       VGroup(
         Item('log_files', editor = ListStrEditor()),
-        Item('open_logfiles'),
+        HGroup(
+          Item('open_logfiles',width = .5),
+          Item('load_ftp_logfiles',width = .5),
+          show_labels = False,
+          # springy = True,
+          # label = 'Log Files:',
+          # show_border = True
+        ),
         show_labels = False,
         label = 'Log Files:',
         show_border = True
@@ -90,6 +98,9 @@ class FileOpener(HasTraits):
           paths = dlg.paths
           for filePath in paths:
             self.esf_files.append(filePath)
+
+  def _load_ftp_logfiles_changed(self):
+    pass
 
 if __name__ == '__main__':
   fileOpener = FileOpener()
