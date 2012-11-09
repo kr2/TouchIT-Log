@@ -4,6 +4,12 @@
 __version__ = '1.0'
 _debug = 0
 
+import wxversion
+wxversion.select('2.8.12')
+
+from enthought.etsconfig.api import ETSConfig;
+ETSConfig.toolkit = "wx";
+
 import sys
 
 from gui.FileSelect import FileOpener
@@ -13,6 +19,9 @@ from gui.mainWindow import MainWindow
 import glue.treeGlue as treeGlue
 import glue.plotGlue as plotGlue
 import glue.exportGlue as exportGlue
+
+
+
 
 
 # File dialog

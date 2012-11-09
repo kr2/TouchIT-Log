@@ -5,7 +5,7 @@
 __version__ = '1.0'
 _debug = 0
 
-from traits.api import HasTraits, List, Button
+from traits.api import *
 from traitsui.api import View, Item, VGroup,HGroup, ListStrEditor
 
 from pyface.file_dialog import FileDialog
@@ -13,13 +13,43 @@ from pyface.constant import OK
 
 from pyface.image_resource import ImageResource
 
+from FTPimport import FTPimport
+
+import os
+
 class FileOpener(HasTraits):
-  esf_files = List
+  esf_files = List()
   open_esffiles = Button("Add esf Files")
 
-  log_files = List
+  log_files = List()
   open_logfiles = Button("Add log Files")
   load_ftp_logfiles = Button("Load Files from FTP")
+
+
+  def __checkPaths(self, pathList):
+    delIndex = []
+    for i, path in enumerate(pathList):
+      path = str(path)
+      if not os.path.exists(path):
+        pathList[i] = path.rsplit(')',1)[0].split('(',1)[1]
+      if not os.path.exists(pathList[i]):
+        delIndex.append(i)
+
+    delIndex.sort(reverse =True)
+
+    for i in delIndex:
+      del(pathList[i])
+
+
+  def _esf_files_items_changed(self):
+    self.__checkPaths(self.esf_files)
+
+  def _log_files_items_changed(self):
+    self.__checkPaths(self.log_files)
+
+
+
+
 
   def __init__(self):
     if _debug == 1:
@@ -42,17 +72,18 @@ class FileOpener(HasTraits):
       #                   "C://Users//KR2//Documents//workspace_eclipse_Phyton//ArcLog//src//data//ExampleData//15309",
       #                   ]
 
-  listEditor = ListStrEditor(
-    multi_select = True,
-    #horizontal_lines = True,
-    auto_add = True,
-    operations = ['delete', 'edit',]
-    )
+  # listEditor = ListStrEditor(
+  #   multi_select = True,
+  #   #horizontal_lines = True,
+  #   auto_add = True,
+  #   operations = ['delete', 'edit',]
+  #   )
 
   traits_view = View(
     VGroup(
       VGroup(
-        Item('esf_files', editor = ListStrEditor()),
+        Item('esf_files', editor = ListStrEditor()
+        ),
         Item('open_esffiles'),
         show_labels = False,
         label = 'ESF Files:',
@@ -82,26 +113,34 @@ class FileOpener(HasTraits):
     icon = ImageResource('mainIcon', search_path=[r'images'])
   )
 
-  def _open_logfiles_changed(self):
-      dlg = FileDialog()
-      dlg.action = 'open files'
-      if dlg.open() == OK:
-          paths = dlg.paths
-          for filePath in paths:
-            self.log_files.append(filePath)
 
-  def _open_esffiles_changed(self):
-      dlg = FileDialog()
-      dlg.wildcard = "*.esf"
-      dlg.action = 'open files'
-      if dlg.open() == OK:
-          paths = dlg.paths
-          for filePath in paths:
-            self.esf_files.append(filePath)
 
-  def _load_ftp_logfiles_changed(self):
-    pass
+
+  def _open_logfiles_fired(self):
+    dlg = FileDialog()
+    dlg.action = 'open files'
+    if dlg.open() == OK:
+        paths = dlg.paths
+        for filePath in paths:
+          self.log_files.append(filePath)
+
+  def _open_esffiles_fired(self):
+    dlg = FileDialog()
+    dlg.wildcard = "*.esf"
+    dlg.action = 'open files'
+    if dlg.open() == OK:
+        paths = dlg.paths
+        for filePath in paths:
+          self.esf_files.append(filePath)
+
+  def _load_ftp_logfiles_fired(self):
+    ftpImport = FTPimport()
+    if ftpImport.configure_traits(kind = 'modal'):
+      for filePath in ftpImport.downloadedFiles:
+        self.log_files.append(filePath)
 
 if __name__ == '__main__':
   fileOpener = FileOpener()
-  print fileOpener.configure_traits()
+  fileOpener.configure_traits()
+  # print fileOpener.configure_traits()
+

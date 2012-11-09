@@ -20,6 +20,9 @@ import datetime
 import ftplib
 import os
 
+from pyface.directory_dialog import DirectoryDialog
+from pyface.constant import OK
+
 from output_stram import OutputStream
 
 
@@ -32,9 +35,12 @@ class FileItem(HasTraits):
 
   def _get_date ( self ):
     if self.fileName.isdigit():
-      return unicode(datetime.datetime.fromtimestamp(int(self.fileName) * 24*60*60))
+      return unicode(datetime.datetime.fromtimestamp(int(self.fileName) * 24*60*60).strftime("%d. %B %Y"))
     else:
       return u'No defined'
+
+  def __str__(self):
+    return unicode(self.fileName) + ' (' + unicode(self.date) + ')'
 
 
 class HandlerFTPimport(Handler):
@@ -42,6 +48,7 @@ class HandlerFTPimport(Handler):
   def closed(self, info, is_ok):
     if info.object._ftp:
       info.object._ftp.close()
+    return is_ok
 
 
 class FTPimport(HasTraits):
@@ -54,9 +61,9 @@ class FTPimport(HasTraits):
 
   retry         = Button('Retry')
 
+  infoStr       = Unicode('Dont use the Shift key to select.\nCtrl+Click or drawin an box works fine.')
   logFiles        = List(FileItem)
-  selectedIndices = Instance(FileItem)
-  selected        = Instance(FileItem)
+  selectedIndices = Any()
 
   destDir       = Unicode()
   changeDestDir = Button('Change Directory')
@@ -71,23 +78,27 @@ class FTPimport(HasTraits):
   #todo FTP to another thread
   def __connect(self):
     self._ftp =  ftplib.FTP(host=self.ftpHost, user=self.ftpUser, passwd=self.ftpPw)
+    self._ftp.connect()
 
   def _download_fired(self):
-    print self.selectedIndices
-    print self.selected
+    # print self.selectedIndices
 
-    # self.__connect()
-    # for i, logFile in enumerate(self.selectedIndices):
-    #   _targetPath = os.path.join(self.destDir, logFile)
-    #   self.OutputStream.write('Downloading file (' + str(i) + '/' + len(self.selectedIndices) + '): ' + logFile + '\n')
-    #   f = open(_targetPath,'wb')
-    #   self._ftp.retrbinary('RETR '+logFile, f.write)
-    #   f.close()
-    #   self.downloadedFiles.append(_targetPath)
+    self.__connect()
+    self.__changeToLogDir()
+    for i, logFile in enumerate([self.logFiles[i] for i in self.selectedIndices]):
+      _targetPath = os.path.join(self.destDir, logFile.fileName)
+      self.comTestOutput.write('Downloading file (' + str(i+1) + '/' + str(len(self.selectedIndices)) + '): ' + logFile.fileName + '\n')
+      f = open(_targetPath,'wb')
+      self._ftp.retrbinary('RETR '+logFile.fileName, f.write)
+      f.close()
+      if not _targetPath in self.downloadedFiles:
+        self.downloadedFiles.append(_targetPath)
+        # print _targetPath
+        # print self.downloadedFiles
 
 
-  def __readFileNames(self):
-    self.__connect() # because of timeout
+
+  def __changeToLogDir(self):
     if not self.LOG_FILE_DIR in self._ftp.nlst():
       self.OutputStream.write('No ' + self.LOG_FILE_DIR + ' directory found. Check if correct host and if data available.\n')
       return
@@ -97,6 +108,9 @@ class FTPimport(HasTraits):
     if self._ftp.nlst() == []:
       self.OutputStream.write('No logg files available.\n')
       return
+
+  def __readFileNames(self):
+    self.__changeToLogDir()
 
     self.logFiles = [FileItem(fileName=x) for x in self._ftp.nlst()]
 
@@ -117,6 +131,12 @@ class FTPimport(HasTraits):
     if self._ftp:
       self.comTestOutput.write('Connection OK\n')
       self.__readFileNames()
+
+
+  def _changeDestDir_changed(self):
+      dlg = DirectoryDialog()
+      if dlg.open() == OK:
+          self.destDir = dlg.path
 
 
 
@@ -151,21 +171,14 @@ class FTPimport(HasTraits):
           ),
         ),
         VGroup(
+          Item('infoStr', show_label=False, style = 'readonly'),
           Item('logFiles',
             style = 'readonly',
             show_label=False,
-            editor = TableEditor(
-              editable  = False,
-              sortable  = False,
-              auto_size = False,
-              configurable = False,
-              show_column_labels = False,
-              # columns   = [ ObjectColumn( name = 'date', editable = False ),
-              #               ObjectColumn( name = 'fileName',  editable = False)],
-
-              # selection_mode = 'rows',
-              selected_indices = 'selectedIndices',
-              # selected = 'selected'
+            editor = ListStrEditor(
+              editable = False,
+              multi_select = True,
+              selected_index = 'selectedIndices',
             )
           ),
           HGroup(
@@ -182,11 +195,10 @@ class FTPimport(HasTraits):
     ),
     title = 'FTP import',
     buttons = [ 'OK', 'Cancel' ],
-    handler=HandlerFTPimport(),
+    # handler=HandlerFTPimport(),
     resizable = True,
     width = .5,
     height = .7,
-    close_result = 0,
     icon = ImageResource('mainIcon', search_path=[r'images'])
   )
 
