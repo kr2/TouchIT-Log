@@ -36,8 +36,14 @@ includes.append('chaco.*')
 
 includes.append('kiva')
 
+includes.append('pyface.ui.qt4')
+includes.append('traitsui.qt4')
+includes.append('enable.qt4')
+
+
+
 includes.append('pyface')
-includes.append('pyface.*')
+# includes.append('pyface.*')
 includes.append('pyface.wx')
 includes.append('pyface.toolkit')
 includes.append('pyface.image_resource')

@@ -1,14 +1,14 @@
 #License: BSD 2-clause license
 """ main
 """
-__version__ = '1.0'
+__version__ = '1.1'
 _debug = 0
 
-import wxversion
-wxversion.select('2.8.12')
+# import wxversion
+# wxversion.select('2.8.12')
 
-from enthought.etsconfig.api import ETSConfig;
-ETSConfig.toolkit = "wx";
+# from enthought.etsconfig.api import ETSConfig;
+# ETSConfig.toolkit = "wx";
 
 import sys
 
